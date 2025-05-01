@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Clock</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>World Clock</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="clock-container">
-        <h1>World Clock</h1>
-        <div class="time-zone" id="newYork">
-            <h2>New York</h2>
-            <p id="newYorkTime"></p>
-        </div>
-        <div class="time-zone" id="london">
-            <h2>London</h2>
-            <p id="londonTime"></p>
-        </div>
-        <div class="time-zone" id="tokyo">
-            <h2>Tokyo</h2>
-            <p id="tokyoTime"></p>
-        </div>
-        <div class="time-zone" id="sydney">
-            <h2>Sydney</h2>
-            <p id="sydneyTime"></p>
-        </div>
-        <div class="time-zone" id="paris">
-            <h2>Paris</h2>
-            <p id="parisTime"></p>
-        </div>
+  <div class="page-wrapper">
+  <!-- Fixed Background -->
+  <div class="globe-container">
+    <img src="IMAGE/GLOBE.jpg" alt="Globe">
+  </div>
+
+  <!-- Scrollable content wrapper -->
+  <main>
+    <div class="header-content">
+      <h1>World Clock</h1>
+      <div class="search-container">
+        <input type="text" id="timezoneSearch" placeholder="Search number of UTC.....">
+        <button id="searchButton">Search</button>
+        <div id="searchResults"></div>
+      </div>
     </div>
-    <script src="script.js"></script>
+
+    <div class="clock-container">
+      <div class="clock-grid">
+        <!-- Dynamic clocks -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="social-links">
+      <a href="https://facebook.com/YOUR_PROFILE" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://instagram.com/YOUR_PROFILE" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://github.com/YOUR_USERNAME" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
